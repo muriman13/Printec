@@ -29,19 +29,14 @@
 </code></div></div></pre>
       </li>
       <li>
-         <p><strong>Build the Docker image</strong></p>
-         <pre>docker build -t printectask
-</code></div></div></pre>
-      </li>
-      <li>
-         <p><strong>Run the application</strong></p>
-         <pre>docker run -p 8080:8080 printectask
-</code></div></div></pre>
+         <p>
+            <strong>Start localy or use docker build</strong>
+         </p>
       </li>
    </ol>
-   <p>The application is now accessible at <code>http://localhost:8080</code>.</p>
+   <p>The application is now accessible at <code>http://host:8080</code>.</p>
       
-  <strong> If just want to run the latest Image</strong>
+  <strong> If you just want to run the latest Image</strong>
       <code><p>docker pull muriman13/printectask:latest
                docker run -d --name printecTaskApp -p 8080:8080 muriman13/printectask:latest</p></code>
 
