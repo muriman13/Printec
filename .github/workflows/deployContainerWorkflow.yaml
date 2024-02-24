@@ -23,7 +23,7 @@ jobs:
 
       - name: Build the Docker image
         run: |
-          docker build . --file Dockerfile --tag printecTask:latest
+          docker build . --file Dockerfile --tag printectask:latest
 
       - name: Log in to Docker Hub
         uses: docker/login-action@v1
