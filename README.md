@@ -1,7 +1,7 @@
 
    <h1>Simple project part of an interview process - Cat Breed</h1>
    <h2>Overview</h2>
-   <p><Strong> Very basic Spring Application</Strong> (The basic whitegirl of spring applications) that in its core its just 3 exposed endpoints, simple service logic, a databse and use of an external free Api to get some data <small>about cats</small> 🐱</p>
+   <p><Strong> Very basic Spring Application</Strong> (The basic white girl of spring applications) that in its core its just 3 exposed endpoints, simple service logic, a databse and use of an external free Api to get some data <small>about cats</small> 🐱</p>
    <h2>Features</h2>
    <ul>
       <li><strong>CRUD Operations:</strong> Create, read, update, and delete cat breeds.</li>
@@ -30,16 +30,21 @@
       </li>
       <li>
          <p><strong>Build the Docker image</strong></p>
-         <pre>docker build -t Printec .
+         <pre>docker build -t printectask
 </code></div></div></pre>
       </li>
       <li>
          <p><strong>Run the application</strong></p>
-         <pre>docker run -p 8080:8080 printecTask
+         <pre>docker run -p 8080:8080 printectask
 </code></div></div></pre>
       </li>
    </ol>
    <p>The application is now accessible at <code>http://localhost:8080</code>.</p>
+      
+  <strong> If just want to run the latest Image</strong>
+      <code><p>docker pull muriman13/printectask:latest
+               docker run -d --name printecTaskApp -p 8080:8080 muriman13/printectask:latest</p></code>
+
    <h2>API Endpoints</h2>
    <ul>
       <li><code>GET /api/catbreeds</code> - Retrieve all cat breeds</li>
