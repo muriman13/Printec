@@ -47,7 +47,7 @@
       <li><code>POST /api/catbreeds/updateFromExternal</code> - Update cat breeds from an external source</li>
    </ul>
    <h2>Deploying with GitHub Actions</h2>
-   <p>This project uses GitHub Actions for CI/CD. On every push to the <code>master</code> branch, the GitHub Actions workflow builds the Docker image, runs tests, and pushes the image to Docker Hub. However for whatever reason currently no gha build agent is getting tasked - Myabe the free tier is no more</p>
+   <p>This project uses GitHub Actions for CI/CD. On every push to the <code>master</code> branch, the GitHub Actions workflow builds the Docker image, runs tests, and pushes the image to Docker Hub. </p>
    <p>After deployment the image should be located in https://hub.docker.com/repository/docker/muriman13/printectask/general</p>
    <h2>Contributing</h2>
    <p>Don't</p>
