@@ -18,6 +18,8 @@ public class CatBreedService {
 
     private RestTemplate restTemplate;
 
+    private final String url = "https://catfact.ninja/breeds";
+
     @Autowired
     public CatBreedService(CatBreedRepo catBreedRepository, RestTemplate restTemplate) {
         this.catBreedRepository = catBreedRepository;
@@ -36,7 +38,6 @@ public class CatBreedService {
     }
 
     public List<CatBreed> callExternalApi() {
-        String url = "https://catfact.ninja/breeds";
         CatBreedResponseWrapper response = restTemplate.getForObject(url, CatBreedResponseWrapper.class);
         if (response != null && response.getData() != null) {
             return catBreedRepository.saveAll(response.getData());
